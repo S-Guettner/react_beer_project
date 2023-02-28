@@ -1,11 +1,11 @@
 const OverviewConstructor = (props) => {
     return ( 
-        <article>
+        <article className="flex justify-between">
             <img src={props.img} alt="Beer" />
-            <div>
-                <h2>{props.name}</h2>
-                <p>{props.tagline}</p>
-                <p>Created by: {(props.contributedBy).slice(0,10)}</p>
+            <div className="text-center">
+                <h2 className="text-red-600">{props.name}</h2>
+                <p className="text-red-600">{props.tagline}</p>
+                <p className="text-red-600">Created by: {(props.contributedBy).slice(0,10)}</p>
             </div>
         </article>
      );
