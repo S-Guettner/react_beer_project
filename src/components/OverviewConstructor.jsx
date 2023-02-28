@@ -1,6 +1,13 @@
-const OverviewConstructor = () => {
+const OverviewConstructor = (props) => {
     return ( 
-        <h1>OVERVIEW CONSTRUCTOR</h1>
+        <article>
+            <img src={props.img} alt="Beer" />
+            <div>
+                <h2>{props.name}</h2>
+                <p>{props.tagline}</p>
+                <p>Created by: {(props.contributedBy).slice(0,10)}</p>
+            </div>
+        </article>
      );
 }
  
